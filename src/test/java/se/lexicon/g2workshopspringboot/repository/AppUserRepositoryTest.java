@@ -1,7 +1,6 @@
 package se.lexicon.g2workshopspringboot.repository;
 
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
@@ -11,7 +10,6 @@ import se.lexicon.g2workshopspringboot.entity.Details;
 
 import java.time.LocalDate;
 import java.util.List;
-import java.util.Optional;
 
 @DataJpaTest
 public class AppUserRepositoryTest {
