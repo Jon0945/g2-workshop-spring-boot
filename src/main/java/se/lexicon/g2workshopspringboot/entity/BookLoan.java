@@ -18,23 +18,20 @@ public class BookLoan {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-
     @Column
     @Setter private LocalDate loanDate;
-
 
     @Column
     @Setter private LocalDate dueDate;
 
-
     @Column
     @Setter private boolean returned;
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(cascade = CascadeType.PERSIST)
     @JoinColumn(name = "appuser_id")
     @Setter private AppUser borrower;
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(cascade = CascadeType.PERSIST)
     @JoinColumn(name = "book_id")
     @Setter private Book book;
 }
