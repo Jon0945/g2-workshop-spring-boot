@@ -1,6 +1,5 @@
 package se.lexicon.g2workshopspringboot.repository;
 
-import com.sun.source.tree.AssertTree;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
